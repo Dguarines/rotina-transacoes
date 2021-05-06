@@ -1,26 +1,19 @@
 package com.pismo.rotinatransacoes.data.vo;
 
-import java.io.Serializable;
-import java.time.LocalDate;
-
-import org.modelmapper.ModelMapper;
-import org.springframework.hateoas.RepresentationModel;
-
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.pismo.rotinatransacoes.entity.Transaction;
+import lombok.*;
+import org.modelmapper.ModelMapper;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import java.io.Serializable;
+import java.time.LocalDate;
 
 @Data
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = false)
-public class TransactionVO extends RepresentationModel<TransactionVO> implements Serializable{
+public class TransactionVO implements Serializable{
 	
 	private static final long serialVersionUID = -401588496781673087L;
 

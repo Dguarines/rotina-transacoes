@@ -18,7 +18,7 @@ import lombok.AllArgsConstructor;
 @RestController
 @AllArgsConstructor
 @RequestMapping("/v1/transactions")
-public class TransactionController {
+public class TransactionRestController {
 	
 	private final TransactionService transactionService;
 
